@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея_Панчук</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@3.5.7/dist/fancybox.css" />
+    <script type="text/javascript" src="scripts/jquery1.4.3.min.js"></script>
+    <script type="text/javascript" src="scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+    <script>
+        $(document).ready(function() {
+            $(".photo").fancybox({
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic',
+                'speedIn': 600,
+                'speedOut': 200,
+                'overlayShow': false
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p align="center">
+            Галерея зображень природи
+        </p>
+    </div>
+    <div class="content">
+        <div class="gallery">        
+            <a rel="gallery" class="photo" href="img/big/01.jpg"><img src="img/small/01.jpg" width="150" height="100" alt=""/></a>
+            <a rel="gallery" class="photo" href="img/big/02.jpg"><img src="img/small/02.jpg" width="150" height="100" alt=""/></a>
+            <a rel="gallery" class="photo" href="img/big/03.jpg"><img src="img/small/03.jpg" width="150" height="100" alt=""/></a>
+            <a rel="gallery" class="photo" href="img/big/04.jpg"><img src="img/small/04.jpg" width="150" height="100" alt=""/></a>
+            <a rel="gallery" class="photo" href="img/big/05.jpg"><img src="img/small/05.jpg" width="150" height="100" alt=""/></a>
+            <a rel="gallery" class="photo" href="img/big/06.jpg"><img src="img/small/06.jpg" width="150" height="100" alt=""/></a>
+            <a rel="gallery" class="photo" href="img/big/07.jpg"><img src="img/small/07.jpg" width="150" height="100" alt=""/></a>
+            <a rel="gallery" class="photo" href="img/big/08.jpg"><img src="img/small/08.jpg" width="150" height="100" alt=""/></a>
+            <a rel="gallery" class="photo" href="img/big/09.jpg"><img src="img/small/09.jpg" width="150" height="100" alt=""/></a>
+        </div>
+    </div>
+</body>
+</html>
